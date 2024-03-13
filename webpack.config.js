@@ -31,6 +31,13 @@ module.exports = {
           }
         }
       },
+      {
+        test: /\.(ts|tsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "ts-loader",
+        }
+      },
       // css loaders here
       {
         test: /\.(css)$/,
